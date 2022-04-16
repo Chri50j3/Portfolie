@@ -25,7 +25,7 @@ echo "\t
 <!-- As a link -->
 <nav class='navbar navbar-light bg-light'>
     <div class='container-fluid'>
-        <a class='navbar-brand' href='\'>Portfolio</a>
+        <a class='navbar-brand' href='\'>Christopher's Portfolio</a>
     </div>
 </nav>
 <div class='container'> \n";

@@ -20,7 +20,7 @@ echo "\t
 
 		  <title> Portfolio Christopher Bik</title>
 </head>
-<body>
+<body style='background-color:rgb(14, 49, 68);'>
 
 <!-- As a link -->
 <nav class='navbar navbar-light bg-light'>
@@ -28,7 +28,11 @@ echo "\t
         <a class='navbar-brand' href=''>Christopher's Portfolio</a>
     </div>
 </nav>
-<div class='container'> \n";
+<div class='container'> 
+
+<br>
+
+\n";
 
 
 // Printing results in HTML
@@ -45,7 +49,9 @@ while ($line = mysqli_fetch_row($result))
 				<a href=$line[1] class='btn btn-primary'>Show more</a>
 			</div>
 		</div>
-	</div> \n";
+	</div> 
+  <br>
+  \n";
 
 }
 echo  "\t</div>\n";
@@ -65,7 +71,11 @@ echo "\t </div>
 
 echo "</table>\n";
 
-echo "<div id='carouselExampleDark' class='carousel carousel-dark slide' data-bs-ride='carousel'>
+echo "
+
+<br>
+
+<div id='carouselExampleDark' class='carousel carousel-dark slide' data-bs-ride='carousel'>
 <div class='carousel-inner'>
   <div class='carousel-item active'>
     <img src='https://raw.githubusercontent.com/Chri50j3/Portfolie/main/Slide1.png' class='d-block w-100' alt='...'>

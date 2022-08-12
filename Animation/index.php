@@ -38,7 +38,9 @@ while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col'>
 		<div class='card' style='width: 18rem;'>
-			<img src=$line[2] class='card-img-top' alt='...'>
+            <video controls>
+			    <source src=$line[2] type=´video/mp4´ class='card-img-top' alt='...'>
+            </video>
 			<div class='card-body'>
 				<h5 class='card-title'>$line[0]</h5>
 				<p class='card-text'>$line[1]</p>

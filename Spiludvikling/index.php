@@ -57,7 +57,11 @@ echo '\t
     </div>
   </div>
 </nav>
-<div class="container"> \n';
+<div class="container"> 
+
+<br>
+
+\n';
 
 
 // Printing results in HTML
@@ -73,6 +77,7 @@ while ($line = mysqli_fetch_row($result))
 				<p class='card-text'>$line[1]</p>
 			</div>
 		</div>
+    <br>
 	</div> \n";
 
 }

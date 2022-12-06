@@ -57,7 +57,11 @@ echo '\t
     </div>
   </div>
 </nav>
-<div class="container"> \n';
+<div class="container"> 
+
+<br>
+
+\n';
 
 
 // Printing results in HTML
@@ -67,12 +71,13 @@ while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col-md-6 offset-md-3'>
 		<div class='card' style='width: 38rem;'>
-			<img src=$line[2] class='card-img-top' alt='...'>
+			<a href=$line[2]><img src=$line[2] class='card-img-top' alt='...'> </a>
 			<div class='card-body'>
 				<h5 class='card-title'>$line[0]</h5>
 				<p class='card-text'>$line[1]</p>
 			</div>
 		</div>
+    <br>
 	</div> <br>\n";
 
 }

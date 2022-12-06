@@ -70,7 +70,7 @@ echo  "\t<table>\n";
 echo  "\t<div class='row'>\n";
 while ($line = mysqli_fetch_row($result))
 {
-	echo "\t <div class='col'>
+	echo "\t <div class='col-md'>
 		<div class='card' style='width: 18rem;'>
 			<img src=$line[3] class='card-img-top' alt='...'>
 			<div class='card-body'>

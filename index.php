@@ -49,8 +49,8 @@ echo '\t
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://bik.dk/3D/">3D Modeling</a></li>
               <li><a class="dropdown-item" href="https://bik.dk/Animations/">Animations & CGI</a></li>
-              <li><a class="dropdown-item" href="https://bik.dk/Game/">Game Design</a></li>
               <li><a class="dropdown-item" href="https://bik.dk/Marketing/">Marketing</a></li>
+              <li><a class="dropdown-item" href="https://bik.dk/About/">About Me</a></li>
             </ul>
           </li>
         </ul>
@@ -67,18 +67,17 @@ echo '\t
 
 // Printing results in HTML
 echo  "\t<table>\n";
-echo  "\t<div class='row'>\n";
+echo  "\t<div class='row justify-content-md-center'>\n";
 while ($line = mysqli_fetch_row($result))
 {
-	echo "\t <div class='col-md'>
-		<div class='card' style='width: 18rem;'>
-			<img src=$line[3] class='card-img-top' alt='...'>
-			<div class='card-body'>
-				<h5 class='card-title'>$line[1]</h5>
-				<p class='card-text'>$line[2]</p>
-				<a href=$line[1] class='btn btn-primary'>Show more</a>
-			</div>
-		</div>
+	echo "\t <div class='col'>
+    <a href=$line[1]><div class='card shadow-lg w-auto' style='width: 18rem;'>
+      <img src=$line[3] class='card-img-top' alt='...'>
+        <div class='card-body'>
+          <p class='card-title link-dark h5 text-decoration-none'>$line[1]</p>
+        </div>
+		</div></a>
+    <br>
 	</div> 
   <br>
   \n";
@@ -101,31 +100,6 @@ echo "\t </div>
 
 echo "</table>\n";
 
-echo "
-
-<br>
-
-<div id='carouselExampleDark' class='carousel carousel-dark slide' data-bs-ride='carousel'>
-<div class='carousel-inner'>
-  <div class='carousel-item active'>
-    <img src='https://raw.githubusercontent.com/Chri50j3/Portfolie/main/Slide1.png' class='d-block w-100' alt='...'>
-  </div>
-  <div class='carousel-item'>
-    <img src='https://raw.githubusercontent.com/Chri50j3/Portfolie/main/Slide2.png' class='d-block w-100' alt='...'>
-  </div>
-  <div class='carousel-item'>
-    <img src='https://raw.githubusercontent.com/Chri50j3/Portfolie/main/Slide3.png' class='d-block w-100' alt='...'>
-  </div>
-</div>
-<button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleDark' data-bs-slide='prev'>
-  <span class='carousel-control-prev-icon' aria-hidden='true'></span>
-  <span class='visually-hidden'>Previous</span>
-</button>
-<button class='carousel-control-next' type='button' data-bs-target='#carouselExampleDark' data-bs-slide='next'>
-  <span class='carousel-control-next-icon' aria-hidden='true'></span>
-  <span class='visually-hidden'>Next</span>
-</button>
-</div>";
 
 // Free resultset
 mysqli_free_result($result);

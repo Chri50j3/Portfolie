@@ -48,8 +48,8 @@ echo '\t
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://bik.dk/3D/">3D Modeling</a></li>
               <li><a class="dropdown-item" href="https://bik.dk/Animations/">Animations & CGI</a></li>
-              <li><a class="dropdown-item" href="https://bik.dk/Game/">Game Design</a></li>
               <li><a class="dropdown-item" href="https://bik.dk/Marketing/">Marketing</a></li>
+              <li><a class="dropdown-item" href="https://bik.dk/About/">About Me</a></li>
             </ul>
           </li>
         </ul>
@@ -57,7 +57,7 @@ echo '\t
     </div>
   </div>
 </nav>
-<div class="container"> 
+<div class="container-sm"> 
 
 <br>
 
@@ -70,7 +70,7 @@ echo  "\t<div class='row'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col-md-6 offset-md-3'>
-		<div class='card' style='width: 38rem;'>
+		<div class='card shadow-lg w-auto' style='width: 38rem;'>
 			<a href=$line[2]><img src=$line[2] class='card-img-top' alt='...'> </a>
 			<div class='card-body'>
 				<h5 class='card-title'>$line[0]</h5>

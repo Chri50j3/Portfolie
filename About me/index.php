@@ -22,7 +22,7 @@ echo '\t
 </head>
 <body style="background-color:rgb(14, 49, 68);">
 
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top shadow">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Christopher Pontoppidan Bik</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -60,19 +60,21 @@ echo '\t
 <div class="container"> 
 
 <br>
-\n';
+<br>
+
+';
 
 echo  "\t<div class='row'>\n";
 echo "\t <div class='col-md-6 offset-md-3'>
-    <div class='card rounded-circle shadow-lg w-auto' style='width: 38rem;'>
-      <img src='SHChristopherKvadrat.png' class='rounded-circle shadow-lg' alt='...'>
+    <div class='card rounded-circle shadow w-auto' style='width: 38rem;'>
+      <img src='SHChristopherKvadrat.png' class='rounded-circle shadow' alt='...'>
       <div class='card-body'>
         <p class='card-text'></p>
       </div>
     </div>
     <br>
 
-    <div class='card shadow-lg w-auto' style='width: 38rem;'>
+    <div class='card shadow w-auto' style='width: 38rem;'>
       <img src='LinkedIn Skill.png' class='card-img-top' alt='...'>
       <div class='card-body'>
         <p class='card-text'></p>
@@ -80,7 +82,7 @@ echo "\t <div class='col-md-6 offset-md-3'>
     </div>
     <br>
 
-    <div class='card shadow-lg w-auto' style='width: 38rem;'>
+    <div class='card shadow w-auto' style='width: 38rem;'>
       <div class='card-body'>
       <p class='h4'>This is me</p>
         <p class='display-7'>
@@ -92,7 +94,7 @@ echo "\t <div class='col-md-6 offset-md-3'>
     </div>
     <br>
 
-    <div class='card shadow-lg w-auto' style='width: 38rem;'>
+    <div class='card shadow w-auto' style='width: 38rem;'>
       <div class='card-body'>
       <p class='h4'>Experience</p>
         <p class='display-7'>
@@ -103,7 +105,7 @@ echo "\t <div class='col-md-6 offset-md-3'>
     </div>
     <br>
 
-    <div class='card shadow-lg w-auto' style='width: 38rem;'>
+    <div class='card shadow w-auto' style='width: 38rem;'>
       <div class='card-body'>
       <p class='h4'>Education</p>
         <p class='display-7'>

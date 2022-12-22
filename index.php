@@ -23,7 +23,7 @@ echo '\t
 <body style="background-color:rgb(14, 49, 68);">
 
 <!-- As a link -->
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top shadow">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Christopher Pontoppidan Bik</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -61,8 +61,9 @@ echo '\t
 <div class="container"> 
 
 <br>
+<br>
 
-\n';
+';
 
 
 // Printing results in HTML
@@ -71,7 +72,7 @@ echo  "\t<div class='row justify-content-md-center'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col'>
-    <a href=$line[1]><div class='card shadow-lg w-auto' style='width: 18rem;'>
+    <a href=$line[1]><div class='card shadow w-auto' style='width: 18rem;'>
       <img src=$line[3] class='card-img-top' alt='...'>
         <div class='card-body'>
           <p class='card-title link-dark h5 text-decoration-none'>$line[1]</p>

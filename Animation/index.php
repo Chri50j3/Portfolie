@@ -22,7 +22,7 @@ echo '\t
 </head>
 <body style="background-color:rgb(14, 49, 68);">
 
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top shadow">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Christopher Pontoppidan Bik</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -60,8 +60,9 @@ echo '\t
 <div class="container"> 
 
 <br>
+<br>
 
-\n';
+';
 
 
 // Printing results in HTML
@@ -70,7 +71,7 @@ echo  "\t<div class='row'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col-md-6 offset-md-3'>
-		<div class='card shadow-lg w-auto' style='width: 38rem;'>
+		<div class='card shadow w-auto' style='width: 38rem;'>
             <video controls>
 			    <source src='$line[0].mp4' type='video/mp4' class='card-img-top' alt='...'>
             </video>

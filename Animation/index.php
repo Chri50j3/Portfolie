@@ -71,7 +71,7 @@ echo  "\t<div class='row'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col-md-6 offset-md-3'>
-		<div class='card shadow w-auto' style='width: 38rem;'>
+		<div class='card shadow w-auto border-0 rounded-4' style='width: 38rem;'>
             <video controls>
 			    <source src='$line[0].mp4' type='video/mp4' class='card-img-top' alt='...'>
             </video>

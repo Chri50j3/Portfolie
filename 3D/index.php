@@ -9,6 +9,9 @@ $query = 'SELECT * FROM 3D';
 $result = mysqli_query($link, $query) or die('Query failed: ' . mysql_error());
 
 echo '\t
+
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -60,8 +63,9 @@ echo '\t
 <div class="container-sm"> 
 
 <br>
+<br>
 
-\n';
+';
 
 
 // Printing results in HTML
@@ -70,8 +74,8 @@ echo  "\t<div class='row'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col-md-6 offset-md-3'>
-		<div class='card shadow w-auto' style='width: 38rem;'>
-			<a href=$line[2]><img src=$line[2] class='card-img-top' alt='...'> </a>
+		<div class='card shadow w-auto border-0' style='width: 38rem;'>
+			<a href=$line[2]><img src=$line[2] class='card-img-top lazyload' alt='...'> </a>
 			<div class='card-body'>
 				<h5 class='card-title'>$line[0]</h5>
 				<p class='card-text'>$line[1]</p>
@@ -84,8 +88,6 @@ while ($line = mysqli_fetch_row($result))
 echo  "\t</div>\n";
 echo "\t </div>
 
-
-<!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'

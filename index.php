@@ -72,10 +72,10 @@ echo  "\t<div class='row justify-content-md-center'>\n";
 while ($line = mysqli_fetch_row($result))
 {
 	echo "\t <div class='col'>
-    <a href=$line[1]><div class='card shadow w-auto' style='width: 18rem;'>
+    <a style='text-decoration:none;' href=$line[1]><div class='card shadow w-auto' style='width: 18rem;'>
       <img src=$line[3] class='card-img-top' alt='...'>
         <div class='card-body'>
-          <p class='card-title link-dark h5 text-decoration-none'>$line[1]</p>
+          <p class='card-title link-dark h5'>$line[1]</p>
         </div>
 		</div></a>
     <br>
